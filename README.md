@@ -110,7 +110,8 @@ The 2.3x slower inference time was acceptable given that:
 
 The multi-agent system coordinates specialized agents to handle different aspects of meteorological analysis. Built using LangGraph, the architecture enables flexible routing, parallel processing, and intelligent orchestration of multiple data sources.
 
-![System Architecture](images/muti-agent-arch.png) 
+<img src="images/muti-agent-arch.png" alt="System Architecture" width="400"/>
+
 
 
 ### Agent Design
