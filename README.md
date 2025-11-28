@@ -8,7 +8,7 @@ A production-ready system that combines fine-tuned vision-language models with i
 
 ## Demo
 
-[![Demo Video](docs/demo-thumb.png)](https://user-images.githubusercontent.com/0fb5410e-2763-47d8-8b46-e66e6e27c896/demo-comp.mp4)
+https://user-images.githubusercontent.com/0fb5410e-2763-47d8-8b46-e66e6e27c896/demo-comp.mp4
 
 
 
