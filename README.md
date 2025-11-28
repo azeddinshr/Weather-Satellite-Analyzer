@@ -1,6 +1,6 @@
 # Weather Satellite Analyzer: Multi-Agent AI System
 
-A production-ready system that combines fine-tuned vision-language models with intelligent agent orchestration to automate meteorological analysis of satellite imagery. Developed in collaboration with Morocco's Direction Générale de la Météorologie (DGM).
+A production-ready system that combines fine-tuned vision-language models with intelligent agent orchestration to automate meteorological analysis of satellite imagery.
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-red.svg)](https://pytorch.org/)
@@ -9,14 +9,12 @@ A production-ready system that combines fine-tuned vision-language models with i
 
 https://github.com/user-attachments/assets/0fb5410e-2763-47d8-8b46-e66e6e27c896
 
+The system provides an interactive web interface where users can submit queries in natural language, optionally accompanied by satellite images or metadata such as coordinates, dates, and location names. The multi-agent architecture intelligently routes these requests to specialized agents: the Satellite Agent for imagery analysis using fine-tuned vision-language models, the Weather Agent for real-time forecasts and current conditions, and the Historical Agent for climate trends and long-term analysis. The system processes all inputs and generates comprehensive meteorological reports in real-time.
 
-The system provides an interactive web interface where users can submit satellite images along with natural language queries. The multi-agent architecture automatically routes requests to specialized agents, processes the imagery using fine-tuned vision-language models, and generates comprehensive meteorological analyses in real-time.
 
 ## Overview
 
 This project addresses the challenge of manual satellite imagery analysis in meteorological workflows. By integrating fine-tuned vision-language models with a multi-agent system, we achieved a 60% reduction in analysis time while maintaining high accuracy in weather pattern identification and forecasting.
-
-The system was developed as part of a Master's thesis research at Mohammed V University, in collaboration with DGM Morocco. It demonstrates how modern LLM-based architectures can be applied to specialized domains requiring both visual understanding and expert knowledge.
 
 ### Key Results
 
@@ -112,7 +110,8 @@ The 2.3x slower inference time was acceptable given that:
 
 The multi-agent system coordinates specialized agents to handle different aspects of meteorological analysis. Built using LangGraph, the architecture enables flexible routing, parallel processing, and intelligent orchestration of multiple data sources.
 
-![System Architecture](images/multi-agent-arch.png)
+![System Architecture](images/muti-agent-arch.png) 
+
 
 ### Agent Design
 
@@ -179,7 +178,7 @@ This architecture allows the system to handle complex queries that require multi
 **Core Technologies**
 - LangGraph for agent orchestration and state management
 - OpenAI GPT-4 for natural language understanding and generation
-- Fine-tuned LLaVA-OneVision for satellite imagery analysis
+- Fine-tuned LLaVA-OneVision and Qwen2-VL-7B-Instruct for satellite imagery analysis
 - PyTorch and HuggingFace Transformers for model inference
 - Flask for web interface and API endpoints
 - ngrok for public access during development and testing
@@ -195,67 +194,6 @@ This architecture allows the system to handle complex queries that require multi
 - Interactive web interface with file upload capabilities
 - RESTful API design for programmatic access
 
-## Installation and Usage
-
-### Requirements
-
-```bash
-pip install -r requirements.txt
-```
-
-Key dependencies include:
-- torch>=2.0.0
-- transformers>=4.35.0
-- langchain>=0.1.0
-- langgraph>=0.0.30
-- flask>=3.0.0
-- peft>=0.7.0
-
-### Running the System
-
-The multi-agent system is designed to run in Google Colab with GPU support:
-
-1. Open `multi-agent-system/final_code_source.ipynb` in Google Colab
-2. Configure API keys for OpenAI and WeatherAPI
-3. Run all cells to initialize agents and start the Flask interface
-4. Access the web interface through the generated ngrok URL
-5. Upload satellite images and submit queries through the interface
-
-### Fine-tuning the Models
-
-To reproduce the fine-tuning experiments:
-
-**Qwen2-VL:**
-```bash
-jupyter notebook finetuning/fine_tuning-qwen.ipynb
-```
-
-**LLaVA-OneVision:**
-```bash
-jupyter notebook finetuning/LLaVA_finetuning.ipynb
-```
-
-Both notebooks include complete training loops with AdaLoRA and DoRA configurations, evaluation metrics, and model export functionality.
-
-## Results and Impact
-
-This project demonstrates that specialized fine-tuning of vision-language models can produce significant improvements in domain-specific applications. The combination of custom dataset creation, comparative model evaluation, and intelligent agent orchestration resulted in a system that:
-
-- Reduces manual analysis workload by 60%
-- Provides consistent, high-quality meteorological interpretations
-- Scales to handle concurrent requests through multi-agent architecture
-- Integrates multiple data sources for comprehensive analysis
-
-The system is currently deployed for evaluation at DGM Morocco, where it assists meteorologists in routine satellite imagery analysis and contributes to weather forecasting workflows.
-
-## Future Directions
-
-Potential enhancements include:
-- Expanding the dataset with additional regional satellite imagery
-- Fine-tuning on multiple satellite sensor types (radar, infrared, microwave)
-- Integration with numerical weather prediction models
-- Real-time alert system for severe weather patterns
-- Mobile application for field meteorologists
 
 ## Repository Structure
 
