@@ -8,7 +8,7 @@ A production-ready system that combines fine-tuned vision-language models with i
 
 ## Demo
 
-https://github.com/azeddinshr/Weather-Satellite-Analyzer/assets/Demo/Simulation_Video.mov
+https://github.com/azeddinshr/Weather-Satellite-Analyzer/Demo/Simulation_Video.mov
 
 The system provides an interactive web interface where users can submit satellite images along with natural language queries. The multi-agent architecture automatically routes requests to specialized agents, processes the imagery using fine-tuned vision-language models, and generates comprehensive meteorological analyses in real-time.
 
