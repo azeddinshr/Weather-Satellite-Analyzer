@@ -8,7 +8,8 @@ A production-ready system that combines fine-tuned vision-language models with i
 
 ## Demo
 
-<video controls src="[https://user-images.githubusercontent.com/XXXXXXXX/yourfile.mp4](https://github-production-user-asset-6210df.s3.amazonaws.com/196426411/520095419-2b125f56-2fea-4b83-9011-005b06822eee.mp4?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVCODYLSA53PQK4ZA%2F20251128%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20251128T104025Z&X-Amz-Expires=300&X-Amz-Signature=8a1b8c5d57400d94bf7e1554d306eef1bc3eaffcab79d044c393c87e7363b5e5&X-Amz-SignedHeaders=host)" />
+<video controls src="https://user-images.githubusercontent.com/0fb5410e-2763-47d8-8b46-e66e6e27c896/demo-comp.mp4" width="600"></video>
+
 
 
 The system provides an interactive web interface where users can submit satellite images along with natural language queries. The multi-agent architecture automatically routes requests to specialized agents, processes the imagery using fine-tuned vision-language models, and generates comprehensive meteorological analyses in real-time.
