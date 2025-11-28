@@ -278,35 +278,14 @@ Potential enhancements include:
 └── README.md
 ```
 
-## Citation
-
-If you use this work in your research, please cite:
-
-```bibtex
-@mastersthesis{azeddin2025weather,
-  title={LLM-Powered Agentic AI System for Satellite Imagery and Weather Analysis},
-  author={Azeddin, Sahir},
-  year={2025},
-  school={Mohammed V University, Rabat},
-  note={In collaboration with Direction Générale de la Météorologie, Morocco}
-}
-```
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Author
 
 Sahir Azeddin  
 Applied AI/ML Engineer  
-Master's in AI & Data Science, Mohammed V University
 
 - Email: azdinsahir11@gmail.com
 - LinkedIn: [linkedin.com/in/azeddin-sahir](https://linkedin.com/in/azeddin-sahir)
 - GitHub: [@azeddinshr](https://github.com/azeddinshr)
 - HuggingFace: [huggingface.co/azeddinshr](https://huggingface.co/azeddinshr)
 
-## Acknowledgments
-
-This project was developed in collaboration with the Direction Générale de la Météorologie (DGM), Morocco, as part of a Master's thesis at Mohammed V University. Special thanks to the meteorology team at DGM for their domain expertise and support throughout the project.
